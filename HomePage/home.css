@@ -1,0 +1,121 @@
+:root {
+    --primary-color: rgb(17, 17, 92);
+    --secondary-color: #1977cc;
+    --light-color: #eee5e9;
+    --dark-color: #2b303a;
+    --grey-color: #7c7c7c;
+    --darker-color: #191b1f;
+}
+
+body {
+    margin: 2;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+}
+ 
+.site-name {
+    font-size: 2rem;
+    margin: .5rem;
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+
+.navbar-links ul {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+   
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: rgb(21, 21, 129);
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid #1977cc;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.2rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.toggle-button .bar:hover {
+    background-color: var(--secondary-color);
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+       flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+}
+
+.home-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.home-img img {
+    width: 100%;
+}
+
+
