@@ -1,5 +1,5 @@
 :root {
-    --primary-color: rgb(17, 17, 92);
+    --primary-color: #194e7e;
     --secondary-color: #1977cc;
     --light-color: #eee5e9;
     --dark-color: #2b303a;
@@ -8,7 +8,7 @@
 }
 
 body {
-    margin: 2;
+    margin: 0;
     padding: 0;
 }
 
@@ -16,23 +16,21 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-   background-color: rgb(255, 255, 255);
-   color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
- 
+
 .site-name {
     font-size: 2rem;
-    margin: .5rem;
+    margin: 0.5rem;
     color: var(--secondary-color);
     font-weight: bolder;
 }
-
 
 .navbar-links ul {
     margin: 0 auto;
     padding: 0;
     display: flex;
-   
 }
 
 .navbar-links li {
@@ -83,10 +81,9 @@ body {
     }
 
     .navbar {
-       flex-direction: column;
+        flex-direction: column;
         align-items: flex-start;
         margin-top: 1rem;
-
     }
 
     .navbar-links ul {
@@ -99,23 +96,76 @@ body {
     }
 
     .navbar-links li a {
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
     }
 
     .navbar-links.active {
         display: flex;
     }
 
+    .home-img .span {
+        left: 5%;
+        right: 5%;
+        top: 17%;
+    }
 }
+
+@media (max-width: 1430px) {
+    .home-img .span {
+        left: 21%;
+        right: 21%;
+    }
+}
+
+@media (max-width: 1060px) {
+    .home-img .span {
+        left: 12%;
+        right: 12%;
+    }
+ }
+
 
 .home-img {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-}
-
-.home-img img {
     width: 100%;
+    height: 40rem;
+    position: relative;
+    background-color: #194e7e;
+    background-image: url(https://cdn-ehfae.nitrocdn.com/uCUbZCjYFAFbVtPATRCEsQQFOMsPjdrY/assets/static/optimized/rev-d2a0e9f/wp-content/uploads/2020/12/diagnoza-auto-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 2px;
 }
 
+.home-img span {
+    position: absolute;
+    bottom: 0;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+    text-align: left;
+    margin: auto;
+    font-size: 20px;
+}
 
+.home-img .first-text {
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: fit-content;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+
+.home-img .second-text {
+    background-color: white;
+    padding: 5px;
+    color: var(--primary-color);
+}
+
+.grid-container {
+    background-color: #7c7c7c;
+    width: 100%;
+    height: 30rem;
+}
