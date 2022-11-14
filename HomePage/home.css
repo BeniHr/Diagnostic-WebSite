@@ -10,6 +10,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar {
@@ -71,6 +72,165 @@ body {
     background-color: var(--secondary-color);
 }
 
+.home-img {
+    width: 100%;
+    height: 40rem;
+    position: relative;
+    background-color: #194e7e;
+    background-image: url(https://cdn-ehfae.nitrocdn.com/uCUbZCjYFAFbVtPATRCEsQQFOMsPjdrY/assets/static/optimized/rev-d2a0e9f/wp-content/uploads/2020/12/diagnoza-auto-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 2px;
+    margin-bottom: 1rem;
+}
+
+.home-img span {
+    position: absolute;
+    bottom: 0;
+    top: 25%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+    text-align: left;
+    margin: auto;
+    font-size: 20px;
+}
+
+.home-img .first-text {
+    background-color: white;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: fit-content;
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+
+.home-img .second-text {
+    background-color: white;
+    padding: 5px;
+    color: var(--primary-color);
+}
+
+.grid-container {
+    /* background-color: #aca8a8; */
+    height: 32rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    padding-bottom: 2rem;
+}
+
+.grid-container .grid-card {
+    position: absolute;
+    background-color: var(--secondary-color);
+    margin: 1rem;
+    border-radius: 14px;
+    width: 20rem;
+    height: 35rem;
+    transition: top 3s;
+    top: 40rem;
+    box-shadow: 15px 11px 15px -1px rgba(0, 0, 0, 0.92);
+    -webkit-box-shadow: 15px 11px 15px -1px rgba(0, 0, 0, 0.92);
+    -moz-box-shadow: 15px 11px 15px -1px rgba(0, 0, 0, 0.92);
+}
+
+.grid-container .grid-card:hover {
+    top: 37rem;
+    background-color: #3187d3;
+}
+
+.card1 {
+    left: 13rem;
+    height: 38rem !important;
+    top: 37rem !important;
+}
+
+.card1 h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.card1 p {
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    padding: 13px;
+}
+
+.card2 {
+    left: 37rem;
+}
+
+.card2 h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.card2 p {
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.card3 {
+    left: 61rem;
+}
+
+.card3 h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.card3 p {
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.card4 {
+    left: 85rem;
+}
+
+.card4 h4 {
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 30px;
+    padding: 0.3rem;
+    text-align: center;
+}
+
+.card4 p {
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+@media (max-width: 420px) {
+    .home-img {
+        height: 45rem;
+    }
+}
+
 @media (max-width: 600px) {
     .toggle-button {
         display: flex;
@@ -110,62 +270,222 @@ body {
     }
 }
 
+@media (max-width: 730px) {
+    .grid-container {
+       height: 150rem!important;
+    }
+
+    .price-section p {
+        padding: 2rem!important;
+        
+    }
+
+    .whyus p {
+        padding: 2rem!important;
+    }
+}
+
+@media (max-width: 1000px) {
+    .bottom-container {
+        flex-direction: column;
+    }
+
+    .bottom-container .sections {
+        text-align: center;
+    }
+}
+
 @media (max-width: 1430px) {
     .home-img .span {
         left: 21%;
         right: 21%;
     }
-}
 
-@media (max-width: 1060px) {
-    .home-img .span {
-        left: 12%;
-        right: 12%;
+    .grid-container {
+        position: relative;
+        height: 80rem;
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: baseline;
+        padding: 0;
     }
- }
 
+    .grid-card {
+        position: static !important;
+        height: 35rem!important;
+    }
+}
 
-.home-img {
+.whyus {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     width: 100%;
-    height: 40rem;
+    box-sizing: border-box;
+}
+
+.whyus h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
     position: relative;
-    background-color: #194e7e;
-    background-image: url(https://cdn-ehfae.nitrocdn.com/uCUbZCjYFAFbVtPATRCEsQQFOMsPjdrY/assets/static/optimized/rev-d2a0e9f/wp-content/uploads/2020/12/diagnoza-auto-2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-top: 2px;
+    color: var(--primary-color);
+    text-align: center;
 }
 
-.home-img span {
+.whyus h2::before {
+    content: '';
     position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: rgb(180, 175, 175);
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.whyus h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--secondary-color);
     bottom: 0;
-    top: 25%;
-    left: 25%;
-    right: 25%;
-    bottom: 25%;
-    text-align: left;
-    margin: auto;
-    font-size: 20px;
+    left: calc(50% - 20px);
 }
 
-.home-img .first-text {
-    background-color: white;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    width: fit-content;
-    text-transform: capitalize;
+.whyus p {
+    text-align: center;
+    font-size: 16px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    color: #444444;
+    line-height: 1.8rem;
+}
+
+.whyus span {
     color: var(--primary-color);
 }
 
-.home-img .second-text {
-    background-color: white;
-    padding: 5px;
-    color: var(--primary-color);
-}
-
-.grid-container {
-    background-color: #7c7c7c;
+.backimage {
+    background-image: url(https://servicedexcar.ro/wp-content/uploads/2017/03/diagnoza-auto-bucuresti.jpg);
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 30rem;
+    height: 20rem;
+    margin-top: 5rem;
 }
+
+.price-section {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.price-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.price-section h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: rgb(180, 175, 175);
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.price-section h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--secondary-color);
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.price-section p {
+    text-align: center;
+    font-size: 16px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    color: #444444;
+    line-height: 1.8rem;
+}
+
+.price-section span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.price-section button  {
+    background-color: var(--secondary-color);
+    border: none;
+    outline: none;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 10px;
+}
+
+.price-section button:hover {
+    background-color: #1a62a0 ;
+}
+
+.price-section button a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bottom-container {
+    /* width: 100%;
+    height: 15rem; */
+    background-color: var(--secondary-color);
+    margin-top: 4rem;
+    color: white;
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.bottom-container .sections {
+    text-align: center;
+    margin: 2.5rem;
+
+}
+
+.bottom-container .sections a {
+    text-decoration: none;
+    color: white;
+}
+
+.bottom-container .sections a:hover {
+    color: #ada9a9;
+}
+
+.bottom-container .sections span {
+    font-weight: bold;
+}
+
+/* .bottom-container .text-format {
+    text-align: start;
+    margin-left: 6rem;
+} */
