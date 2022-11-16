@@ -1,0 +1,235 @@
+:root {
+    --primary-color: #194e7e;
+    --secondary-color: #1977cc;
+    --light-color: #eee5e9;
+    --dark-color: #2b303a;
+    --grey-color: #7c7c7c;
+    --darker-color: #191b1f;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.site-name {
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: var(--secondary-color);
+    font-weight: bolder;
+}
+
+.navbar-links ul {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: rgb(21, 21, 129);
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid #1977cc;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.2rem;
+    right: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.toggle-button .bar:hover {
+    background-color: var(--secondary-color);
+}
+
+.bottom-container {
+    /* width: 100%;
+    height: 15rem; */
+    background-color: var(--secondary-color);
+    margin-top: 1rem;
+    color: white;
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.bottom-container .sections {
+    text-align: center;
+    margin: 2.5rem;
+}
+
+.bottom-container .sections a {
+    text-decoration: none;
+    color: white;
+}
+
+.bottom-container .sections a:hover {
+    color: #ada9a9;
+}
+
+.bottom-container .sections span {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+@media (max-width: 1000px) {
+    .bottom-container {
+        flex-direction: column;
+    }
+
+    .bottom-container .sections {
+        text-align: center;
+    }
+}
+
+aside {
+    /* position: fixed; */
+    width: 15%;
+    height: 37.25rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    padding-top: 0.75rem;
+    border-right: 2px solid #194e7e;
+    padding-right: 3rem;
+}
+
+aside nav h2 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 27px;
+}
+
+aside nav a {
+    display: grid;
+    text-decoration: none;
+    color: #343944;
+    text-align: left;
+    padding-left: 1rem;
+    line-height: 4rem;
+    font-size: 19px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+aside nav a.active,
+aside nav a:hover{
+    background-color: var(--secondary-color);
+}
+
+.active {
+    color: white;
+}
+
+.active:hover {
+    background-color: #1a5991;
+}
+
+.scroll-container {
+    width: 85%;
+    height: 37.25rem;
+    overflow-y: scroll;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 2rem;
+}
+
+.content {
+    display: flex;
+}
+
+section:nth-child(odd) {
+    background: #dad5d5;
+}
+
+.container-in {
+    display: flex;
+    margin-right: 3rem;
+}
+
+.container-in img {
+    width: 35rem;
+    height: 30rem;
+}
+
+.container-in h2 {
+    font-weight: bolder;
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.container-in p {
+    line-height: 2rem;
+    text-indent: 3rem;
+    color: var(--dark-color);
+    margin-left: 2rem;
+}
