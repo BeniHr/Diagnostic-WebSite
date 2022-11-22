@@ -107,7 +107,7 @@ body {
     font-weight: bold;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .toggle-button {
         display: flex;
     }
@@ -138,6 +138,16 @@ body {
     .navbar-links.active {
         display: flex;
     }
+
+    .scroll-container {
+       margin-left: 0!important;
+       margin-right: 0!important;
+    }
+
+    .content {
+        justify-content: center;
+    }
+
 }
 
 @media (max-width: 1000px) {
@@ -147,6 +157,51 @@ body {
 
     .bottom-container .sections {
         text-align: center;
+    }
+
+    .container-in {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .container-in img {
+        display: flex;
+        justify-content: center;
+        width: auto!important;
+        height: auto!important;
+    }
+
+}
+
+@media (max-width: 1580px) {
+    aside {
+        width: 19rem !important;
+    }
+
+    .container-in-in p {
+        text-align: center;
+    }
+
+    .container-in-in h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1290px) {
+    aside {
+        display: none;
+    }
+
+
+    .content {
+        width: 100%;
+    }
+
+    .scroll-container {
+        overflow-y: initial!important;
+        height: 100%!important;
     }
 }
 
@@ -182,7 +237,7 @@ aside nav a {
 }
 
 aside nav a.active,
-aside nav a:hover{
+aside nav a:hover {
     background-color: var(--secondary-color);
 }
 
