@@ -8,6 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="contact.css">
         <script src="contact.js" defer></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_ZC5BaF-odsDg3FEOlI-R_I5mrD2WVUA&callback=initMap&v=weekly"defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script> 
     </head>
     <body>
         <header>
@@ -28,7 +30,51 @@
             </nav>
         </header>
 
-        
+        <div class="main-content">
+            <div class="primary-text">
+                <h2>Want to get in touch with us?</h2>
+                <p class="text">We can send you an inspector. Our operator can answer your questions and curiosities. <br> Feel free to contact us. :) 
+                    <br>
+                    <br>
+                    <span> Our contact details ↓.</span>
+                    <p>Phone: +40753974606 <br>
+                        Email: hreniucbenii@gamil.com</p>
+                        <button id="map-button">Headquarter location</button>
+
+                        <div id="entries"></div>
+
+                    <br><br>
+                    <span> Or get in touch with us directly from here ↓.</span>
+                </p>
+            </div>
+
+            <div class="formular">
+                <div class="contact-form">
+                    <form>
+                        <div class="input-group">
+                            <label for="first-name">First Name</label>
+                            <input name="first-name" type="text" placeholder="ex. Beniamin">
+                        </div>
+                        <div class="input-group">
+                            <label for="last-name">Last Name</label>
+                            <input name="last-name" type="text" placeholder="ex. Hreniuc">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input name="email" type="email" placeholder="hreniucbenii@gmail.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="phone">Phone</label>
+                            <input name="phone" type="tel" placeholder="+40753974606">
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Description</label>
+                            <textarea rows="5" placeholder="Tell me more about your problem..."></textarea>
+                        </div>
+                    </form>
+                </div>
+        </div>
+        <div class="button"><button>Submit</button></div>
 
         <footer>
             <div class="bottom-container">

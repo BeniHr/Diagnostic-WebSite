@@ -146,3 +146,120 @@ body {
         text-align: center;
     }
 }
+
+.primary-text {
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.primary-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.primary-text h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: rgb(180, 175, 175);
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.primary-text h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: var(--secondary-color);
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.primary-text p {
+    text-align: center;
+    font-size: 16px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    color: #444444;
+    line-height: 1.8rem;
+}
+
+.primary-text span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.main-content {
+    height: 100%;
+}
+
+.formular {
+    display: flex;
+    justify-content: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+    width: 35rem;
+    height: 3rem;
+}
+
+.input-group textarea {
+    box-sizing: border-box;
+    border-radius: 0.2em;
+    border: 2px solid var(--primary-color);
+    box-shadow: none;
+    font-size: 1rem;
+    font-weight: inherit;
+    padding: 0.25em;
+    padding-bottom: 5rem;
+}
+
+.input-group input {
+    box-sizing: border-box;
+    border-radius: 0.2em;
+    border: 2px solid var(--secondary-color);
+    box-shadow: none;
+    font-size: 1rem;
+    font-weight: inherit;
+    padding: 0.25em;
+}
+
+.input-group label {
+    color: var(--primary-color);
+}
+
+.button {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+button {
+    background-color: var(--secondary-color);
+    border: none;
+    outline: none;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: var(--light-color);
+}
+
+ button:hover {
+    background-color: #1a62a0 ;
+}
